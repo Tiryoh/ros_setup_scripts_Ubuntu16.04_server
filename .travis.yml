@@ -4,10 +4,13 @@
 
 sudo: required
 dist: xenial
+language:
+    - generic
 
 branches:
   only: 
     - master
+    - /^hotfix.*$/
 
 script:
 #  - export DEBIAN_FRONTEND=noninteractive
